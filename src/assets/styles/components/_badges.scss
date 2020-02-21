@@ -1,0 +1,16 @@
+.badge {
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	inset-block-start: -15px;
+	inset-inline-end: -15px;
+	top: -15px;
+	right: -15px;
+	background-color: $primary-color;
+	color: $white;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

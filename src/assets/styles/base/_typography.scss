@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "Helvetica Light";
+	src: url("~@/assets/fonts/HelveticaNeue_Light.ttf");
+}
+@font-face {
+	font-family: "Helvetica Regular";
+	src: url("~@/assets/fonts/HelveticaNeue_Medium.ttf");
+}
+@font-face {
+	font-family: "Helvetica Bold";
+	src: url("~@/assets/fonts/HelveticaNeue_Bold.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+body {
+	color: $black;
+	font-family: "Helvetica Regular";
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 20px;
+}

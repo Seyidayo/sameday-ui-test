@@ -1,0 +1,37 @@
+nav {
+	min-height: 163px;
+	position: relative;
+	background: #ffffff;
+	box-shadow: 0px 3px 50px #1877ff1c;
+	opacity: 1;
+	padding: 2px 3rem;
+	color: #707070;
+	font-size: 25px;
+
+	li {
+		list-style: none;
+		padding: 0 1rem;
+		border-left: 0.5px solid #adadad;
+
+		i {
+			position: relative;
+			margin-inline-end: 15px;
+		}
+		img {
+			opacity: 0.7;
+		}
+	}
+}
+
+.dropdown-toggle {
+	color: $primary-color;
+}
+
+.dropdown-toggle::after {
+	display: inline-block;
+	border-top: 0.8em solid;
+	border-right: 0.8em solid transparent;
+	border-bottom: 0;
+	border-left: 0.8em solid transparent;
+	border-radius: 50%;
+}
