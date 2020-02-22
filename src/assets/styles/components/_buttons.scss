@@ -1,0 +1,22 @@
+input {
+	inline-size: 250px;
+	block-size: 45px;
+	border: $border-inputs solid transparent;
+	border-radius: $border-radius;
+	margin: 12px;
+	padding: 1rem;
+}
+
+button {
+	padding: 0.5rem;
+	min-inline-size: 135px;
+	block-size: 45px;
+	border: $border-buttons solid transparent;
+	border-radius: $border-radius;
+	font-size: 1rem;
+
+	&.button--blue {
+		background-color: $primary-color;
+		color: $white;
+	}
+}

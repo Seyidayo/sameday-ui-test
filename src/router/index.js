@@ -1,14 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Production from "../views/Production.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
 	{
 		path: "/",
-		name: "Dashboard",
-		component: Home,
+		name: "Production",
+		component: Production,
 		meta: {
 			title: "Production House | SameDay Custom",
 			content: "Production House | SameDay Custom"
