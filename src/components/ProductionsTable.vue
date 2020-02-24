@@ -1,8 +1,32 @@
 <template>
-  <section style="overflow-x: auto">
+  <section style="overflow-x: auto; margin-top: 3rem">
+    <section style="width: 100%" class="d-flex border-bottom my-2">
+      <ul class="table-tabs">
+        <li class="pb-2 active">
+          All Productions
+          <div class="badge badge--no-bg">192</div>
+        </li>
+        <li class="pb-2">
+          Awaiting Production
+          <div class="badge badge--red">19</div>
+        </li>
+        <li class="pb-2">Completed</li>
+      </ul>
+
+      <form class="d-flex">
+        <button class="button--white">Print worksheet</button>
+        <select name disabled>
+          <option value>Mark as Completed</option>
+        </select>
+        <button class="button--gray">Save</button>
+      </form>
+    </section>
     <table cell>
       <thead>
         <tr>
+          <th>
+            <input type="checkbox" name id @change="clickAll" />
+          </th>
           <th>Order #</th>
           <th>Item #</th>
           <th>Details</th>
@@ -15,8 +39,10 @@
         </tr>
       </thead>
       <tbody>
-        <!-- <tr v-for="index in 4" :key="index"> -->
-        <tr v-for="(item, index) in productions" :key="index">
+        <tr @click="changeRoute(index)" v-for="(item, index) in productions" :key="index">
+          <td>
+            <input type="checkbox" name="checkbox" />
+          </td>
           <td>{{ item.orderNo }}</td>
           <td>{{ item.itemNo }}</td>
           <td class="d-flex">
@@ -50,7 +76,7 @@
           </td>
           <td class="d-flex--column">
             <p>{{ item.deliveryTime.date }}</p>
-            <p>
+            <p style="color: #C1C1C1">
               Time Left:
               <span class="success">{{ item.deliveryTime.left }}</span>
             </p>
@@ -158,6 +184,17 @@ export default {
       }
       //   return value.toUpperCase();
     }
+  },
+  methods: {
+    clickAll({ target }) {
+      document
+        .querySelectorAll("[type='checkbox']")
+        .forEach(input => (input.checked = target.checked));
+    },
+
+    changeRoute() {
+      this.$router.push({ path: "/order" });
+    }
   }
 };
 </script>
@@ -177,10 +214,22 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-.d-flex {
-  // background-color: red;
-  // align-self: center;
-  // justify-content: space-between;
-  // align-items: center;
+section.d-flex {
+  padding: 0;
+  justify-content: space-between;
+  align-items: center !important;
+}
+
+form {
+  * {
+    margin-inline-start: 0.5rem;
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    padding: 0.25rem;
+    font-size: 0.9em;
+  }
 }
 </style>

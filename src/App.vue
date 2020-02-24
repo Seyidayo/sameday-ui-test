@@ -4,8 +4,11 @@
     <main>
       <nav-bar />
       <section>
-        <router-view />
+        <transition name="fade" appear>
+          <router-view />
+        </transition>
       </section>
+      <Footer />
     </main>
   </div>
 </template>
@@ -13,10 +16,12 @@
 <script>
 import SideBar from "@/components/SideBar.vue";
 import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     SideBar,
-    NavBar
+    NavBar,
+    Footer
   }
 };
 </script>
@@ -32,21 +37,25 @@ export default {
 }
 
 main {
-  overflow: scroll;
   overflow-x: scroll;
   scrollbar-width: none;
   position: relative;
   display: inline-block;
   width: 100%;
-
-  section {
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: #fcfcfc;
-  }
+  height: 100%;
+  padding: 0;
 }
 
 main::-webkit-scrollbar {
   width: 0;
+}
+</style>
+
+<style lang="scss" scoped>
+section {
+  padding: 1rem;
+  margin-top: 100px;
+  background-color: #fcfcfc;
+  min-height: 1000px;
 }
 </style>

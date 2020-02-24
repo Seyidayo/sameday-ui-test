@@ -1,35 +1,60 @@
 @font-face {
-	font-family: "Helvetica Light";
-	src: url("~@/assets/fonts/HelveticaNeue_Light.ttf");
+  font-family: "Helvetica Light";
+  src: url("~@/assets/fonts/HelveticaNeue_Light.ttf");
 }
 @font-face {
-	font-family: "Helvetica Regular";
-	src: url("~@/assets/fonts/HelveticaNeue_Medium.ttf");
+  font-family: "Helvetica Regular";
+  src: url("~@/assets/fonts/HelveticaNeue_Medium.ttf");
 }
 @font-face {
-	font-family: "Helvetica Bold";
-	src: url("~@/assets/fonts/HelveticaNeue_Bold.ttf");
+  font-family: "Helvetica Bold";
+  src: url("~@/assets/fonts/HelveticaNeue_Bold.ttf");
 }
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
 body {
-	color: $black;
-	font-family: "Helvetica Regular";
+  color: $black;
+  font-family: "Helvetica Regular", sans-serif;
+}
+
+footer {
+  font-family: "Nunito", sans-serif;
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    color: $primary-color;
+  }
 }
 
 h1 {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 h2 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 h3 {
-	font-size: 25px;
+  font-size: 25px;
 }
 
-p {
-	font-size: 20px;
+// Colors
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+
+.success {
+  color: #1e8406;
+}
+
+.fail {
+  color: #ff0000;
 }

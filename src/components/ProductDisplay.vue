@@ -31,10 +31,11 @@ export default {
 
   computed: {
     modalID() {
-      return `popover-${this.color}`;
+      return this.$route.name == "Order"
+        ? `popover-order-${this.color}`
+        : `popover-${this.color}`;
     },
     getImageUrl() {
-      debugger;
       var images = require.context(
         "../assets/images/products",
         false,

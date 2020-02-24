@@ -13,9 +13,6 @@ export default {};
 </script>
 
 <style lang="scss">
-form {
-  display: inline-block;
-}
 input {
   background-color: #eeeeee;
 }

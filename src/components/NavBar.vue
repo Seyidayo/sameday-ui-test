@@ -14,24 +14,27 @@
         </b-nav-item>
 
         <b-nav-item>
-          <i>
+          <span>
             <img src="../assets/images/mail.svg" height="24" width="24" alt=" " />
             <span class="badge">1</span>
-          </i>
+          </span>
           Message
         </b-nav-item>
+        <li class="nav-item">
+          <div class="nav-link d-flex">
+            <span>
+              <img src="../assets/images/shopping-cart.svg" height="24" width="24" alt=" " />
+              <span class="badge">1</span>
+            </span>
+            Market Place
+            <div class="dropdown-toggle mx-2"></div>
+          </div>
+        </li>
         <b-nav-item>
-          <i>
+          <span>
             <img src="../assets/images/shopping-cart.svg" height="24" width="24" alt=" " />
             <span class="badge">1</span>
-          </i>
-          Market Place
-        </b-nav-item>
-        <b-nav-item>
-          <i>
-            <img src="../assets/images/shopping-cart.svg" height="24" width="24" alt=" " />
-            <span class="badge">1</span>
-          </i>
+          </span>
           Notifications
         </b-nav-item>
         <b-nav-item>

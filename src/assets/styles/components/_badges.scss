@@ -1,16 +1,41 @@
 .badge {
-	height: 26px;
-	width: 26px;
-	position: absolute;
-	inset-block-start: -15px;
-	inset-inline-end: -15px;
-	top: -15px;
-	right: -15px;
-	background-color: $primary-color;
-	color: $white;
-	border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  inset-block-start: -15px;
+  inset-inline-end: -15px;
+  top: -15px;
+  right: -15px;
+  background-color: $primary-color;
+  color: $white;
+  border-radius: 50%;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.badge--red {
+    background-color: red;
+  }
+
+  &.badge--no-bg {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+ul.table-tabs {
+  .badge {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+  }
+}
+
+.stamp {
+  height: 10px;
+  width: 10px;
+  background-color: #1e8406;
+  border-radius: 50%;
 }

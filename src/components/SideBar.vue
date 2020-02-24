@@ -7,31 +7,41 @@
     </div>
 
     <b-nav-item>
-      <img src="../assets/images/time-left.svg" alt=" " height="24px" width="24px" />
+      <img src="../assets/images/dashboard.svg" alt=" " height="24px" width="24px" />
       <div class="nav-item-text">Dashboard</div>
     </b-nav-item>
 
     <router-link to="/">
-      <b-nav-item v-b-toggle.operations-menu variant="primary">
-        <img src="../assets/images/time-left.svg" alt=" " height="24px" width="24px" />
-        <div class="nav-item-text">Operations</div>
-        <span class="dropdown-toggle"></span>
-      </b-nav-item>
+      <li class="nav-item" v-b-toggle.operations-menu variant="primary">
+        <div class="nav-link d-flex">
+          <img src="../assets/images/time-left.svg" alt=" " height="24px" width="24px" />
+          <div class="nav-item-text d-flex">
+            Operations
+            <span class="dropdown-toggle"></span>
+          </div>
+        </div>
+      </li>
     </router-link>
 
     <b-collapse id="operations-menu" class="mt-2">
-      <b-nav-item>
-        <img src alt />
-        <div class="nav-item-text">Orders</div>
-        <span class="badge">1</span>
-      </b-nav-item>
+      <router-link to="/order">
+        <li class="nav-item">
+          <div class="nav-link">
+            <img src alt />
+            <div class="nav-item-text">Orders</div>
+            <span class="badge">1</span>
+          </div>
+        </li>
+      </router-link>
 
       <router-link to="/">
-        <b-nav-item>
-          <img src alt />
-          <div class="nav-item-text">Production House</div>
-          <span class="badge">1</span>
-        </b-nav-item>
+        <li class="nav-item">
+          <div class="nav-link">
+            <img src alt />
+            <div class="nav-item-text">Production House</div>
+            <span class="badge">1</span>
+          </div>
+        </li>
       </router-link>
 
       <b-nav-item>
@@ -119,6 +129,16 @@ export default {
   .toggle span {
     transform: rotate(0deg);
     opacity: 1;
+  }
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+#operations-menu {
+  .nav-item-text {
+    margin-left: 1.5rem;
   }
 }
 </style>
