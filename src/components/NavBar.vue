@@ -45,10 +45,10 @@
             height="40"
             class="border__blue"
           />
-          <!-- <span class="d-flex">
-            <p style="color: #000">Me</p>
+          <span class="d-flex">
+            Me
             <div class="dropdown-toggle"></div>
-          </span>-->
+          </span>
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>

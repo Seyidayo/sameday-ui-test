@@ -46,6 +46,9 @@ nav {
 
 #side-bar {
   background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 60px;
 
   .nav-item-text,
   .dropdown-toggle {
@@ -105,12 +108,14 @@ nav {
   }
 
   .nav-item {
-    inline-size: 70px;
+    inline-size: 50px;
+    margin: 0 auto;
   }
 
   .nav-link {
     position: relative;
     border-radius: 50%;
+    // width: 75%;
     img {
       margin-inline-end: 0;
     }

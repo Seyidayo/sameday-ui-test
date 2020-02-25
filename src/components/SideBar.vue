@@ -6,75 +6,75 @@
       <span></span>
     </div>
 
-    <b-nav-item>
-      <img src="../assets/images/dashboard.svg" alt=" " height="24px" width="24px" />
-      <div class="nav-item-text">Dashboard</div>
-    </b-nav-item>
-
-    <router-link to="/">
-      <li class="nav-item" v-b-toggle.operations-menu variant="primary">
-        <div class="nav-link d-flex">
-          <img src="../assets/images/time-left.svg" alt=" " height="24px" width="24px" />
-          <div class="nav-item-text d-flex">
-            Operations
-            <span class="dropdown-toggle"></span>
-          </div>
-        </div>
-      </li>
-    </router-link>
-
-    <b-collapse id="operations-menu" class="mt-2">
-      <router-link to="/order">
-        <li class="nav-item">
-          <div class="nav-link">
-            <img src alt />
-            <div class="nav-item-text">Orders</div>
-            <span class="badge">1</span>
-          </div>
-        </li>
-      </router-link>
-
-      <router-link to="/">
-        <li class="nav-item">
-          <div class="nav-link">
-            <img src alt />
-            <div class="nav-item-text">Production House</div>
-            <span class="badge">1</span>
-          </div>
-        </li>
-      </router-link>
-
+    <div>
       <b-nav-item>
-        <img src alt />
-        <div class="nav-item-text">Bids</div>
+        <img src="../assets/images/dashboard.svg" alt=" " height="24px" width="24px" />
+        <div class="nav-item-text">Dashboard</div>
+      </b-nav-item>
+      <router-link to="/">
+        <li class="nav-item" v-b-toggle.operations-menu variant="primary">
+          <div class="nav-link d-flex">
+            <img src="../assets/images/time-left.svg" alt=" " height="24px" width="24px" />
+            <div class="nav-item-text">
+              Operations
+              <span class="dropdown-toggle"></span>
+            </div>
+          </div>
+        </li>
+      </router-link>
+      <b-collapse id="operations-menu" class="mt-2">
+        <router-link to="/order">
+          <li class="nav-item">
+            <div class="nav-link">
+              <img src alt />
+              <div class="nav-item-text">Orders</div>
+              <span class="badge">1</span>
+            </div>
+          </li>
+        </router-link>
+
+        <router-link to="/">
+          <li class="nav-item">
+            <div class="nav-link">
+              <img src alt />
+              <div class="nav-item-text">Production House</div>
+              <span class="badge">1</span>
+            </div>
+          </li>
+        </router-link>
+
+        <b-nav-item>
+          <img src alt />
+          <div class="nav-item-text">Bids</div>
+          <span class="badge">1</span>
+        </b-nav-item>
+        <b-nav-item>
+          <img src alt />
+          <div class="nav-item-text">Promotions/Discount</div>
+        </b-nav-item>
+        <b-nav-item>
+          <img src alt />
+          <div class="nav-item-text">Out Sourcing</div>
+        </b-nav-item>
+      </b-collapse>
+      <b-nav-item>
+        <img src="../assets/images/file.svg" alt=" " height="24px" width="24px" />
+        <div class="nav-item-text">Records</div>
+      </b-nav-item>
+      <b-nav-item>
+        <img src="../assets/images/shopping-cart-white.svg" alt=" " height="24px" width="24px" />
+        <div class="nav-item-text">Supply Store</div>
+      </b-nav-item>
+      <b-nav-item>
+        <img src="../assets/images/supply.svg" alt=" " height="24px" width="24px" />
+        <div class="nav-item-text">Market Place</div>
+      </b-nav-item>
+      <b-nav-item>
+        <img src="../assets/images/chat.svg" alt=" " height="24px" width="24px" />
+        <div class="nav-item-text">Forums</div>
         <span class="badge">1</span>
       </b-nav-item>
-      <b-nav-item>
-        <img src alt />
-        <div class="nav-item-text">Promotions/Discount</div>
-      </b-nav-item>
-      <b-nav-item>
-        <img src alt />
-        <div class="nav-item-text">Out Sourcing</div>
-      </b-nav-item>
-    </b-collapse>
-    <b-nav-item>
-      <img src="../assets/images/file.svg" alt=" " height="24px" width="24px" />
-      <div class="nav-item-text">Records</div>
-    </b-nav-item>
-    <b-nav-item>
-      <img src="../assets/images/shopping-cart-white.svg" alt=" " height="24px" width="24px" />
-      <div class="nav-item-text">Supply Store</div>
-    </b-nav-item>
-    <b-nav-item>
-      <img src="../assets/images/supply.svg" alt=" " height="24px" width="24px" />
-      <div class="nav-item-text">Market Place</div>
-    </b-nav-item>
-    <b-nav-item>
-      <img src="../assets/images/chat.svg" alt=" " height="24px" width="24px" />
-      <div class="nav-item-text">Forums</div>
-      <span class="badge">1</span>
-    </b-nav-item>
+    </div>
 
     <b-nav-item>
       <img src="../assets/images/settings.svg" alt=" " height="24px" width="24px" />
